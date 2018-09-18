@@ -81,8 +81,11 @@ function toCodePoint(str) {
   let i = 0;
   while (i < length) {
     c = str.charCodeAt(i++);
-    if (0 < p)
-      return 0x10000 + ((p - 0xD800) << 10) + (c - 0xDC00);
+    if (0 < p) {
+      c = 0x10000 + ((p - 0xD800) << 10) + (c - 0xDC00);
+      p = 0;
+      return c;
+    }
     else if (0xD7FF < c && c < 0xDC00)
       p = c;
     else
