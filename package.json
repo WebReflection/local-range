@@ -1,0 +1,24 @@
+{
+  "name": "local-range",
+  "version": "0.0.0",
+  "description": "Create a list of unicode ranges usable to subset fonts.",
+  "main": "cjs/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebReflection/local-range.git"
+  },
+  "keywords": [
+    "locale",
+    "unicode",
+    "range"
+  ],
+  "author": "Andrea Giammarchi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebReflection/local-range/issues"
+  },
+  "homepage": "https://github.com/WebReflection/local-range#readme"
+}
