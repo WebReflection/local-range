@@ -1,6 +1,6 @@
 {
   "name": "local-range",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Create a list of unicode ranges usable to subset fonts.",
   "main": "cjs/index.js",
   "scripts": {
