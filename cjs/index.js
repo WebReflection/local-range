@@ -27,8 +27,8 @@ module.exports = {
             options.exclude = options.ignore;
           if (options.exclude)
             langs = langs.filter(lang => !options.exclude.includes(lang));
-          if (options.exclude)
-            langs = langs.filter(lang => options.exclude.includes(lang));
+          if (options.include)
+            langs = langs.filter(lang => options.include.includes(lang));
           for (const lang of langs)
             ops.push(
               readdir(path.join(options.folder, lang))
