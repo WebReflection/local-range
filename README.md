@@ -1,7 +1,7 @@
 # local-range
 
 ```js
-const localRange = require('./local-range');
+const localRange = require('local-range');
 
 localRange
   .toSubsetRanges({
