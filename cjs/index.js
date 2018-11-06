@@ -16,10 +16,13 @@ module.exports = {
     exclude: [],
     // how text / sentences should be retrieved
     // (by default the message field of the lang object)
-    getText: info => info.message
+    getText: info => info.message,
+    // a list of chars to include already
+    // i.e. `@.!?` or others
+    chars: ''
   }) {
     return new Promise((res, rej) => {
-      const all = new Set();
+      const all = new Set([...(options.chars || '')]);
       readdir(options.folder)
         .then(langs => {
           const ops = [];
